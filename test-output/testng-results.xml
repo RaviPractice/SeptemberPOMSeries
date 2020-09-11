@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="1" total="6" passed="5">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Hub spot Test automtion regression suite" duration-ms="38210" started-at="2020-09-11T11:04:28Z" finished-at="2020-09-11T11:05:06Z">
+    <groups>
+    </groups>
+    <test name="login page test" duration-ms="15526" started-at="2020-09-11T11:04:28Z" finished-at="2020-09-11T11:04:43Z">
+      <class name="com.qa.hubspot.tests.LoginPageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.hubspot.tests.LoginPageTest@3bfdc050]" name="setUp" is-config="true" duration-ms="7568" started-at="2020-09-11T11:04:28Z" finished-at="2020-09-11T11:04:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="signuplinkTest()[pri:1, instance:com.qa.hubspot.tests.LoginPageTest@3bfdc050]" name="signuplinkTest" duration-ms="5700" started-at="2020-09-11T11:04:36Z" finished-at="2020-09-11T11:04:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signuplinkTest -->
+        <test-method status="PASS" signature="loginPageTitleTest()[pri:2, instance:com.qa.hubspot.tests.LoginPageTest@3bfdc050]" name="loginPageTitleTest" duration-ms="49" started-at="2020-09-11T11:04:41Z" finished-at="2020-09-11T11:04:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginPageTitleTest -->
+        <test-method status="PASS" signature="loginpageTest()[pri:3, instance:com.qa.hubspot.tests.LoginPageTest@3bfdc050]" name="loginpageTest" duration-ms="1209" started-at="2020-09-11T11:04:41Z" finished-at="2020-09-11T11:04:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginpageTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.hubspot.tests.LoginPageTest@3bfdc050]" name="tearDown" is-config="true" duration-ms="931" started-at="2020-09-11T11:04:43Z" finished-at="2020-09-11T11:04:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.hubspot.tests.LoginPageTest -->
+    </test> <!-- login page test -->
+    <test name="home page test" duration-ms="22642" started-at="2020-09-11T11:04:43Z" finished-at="2020-09-11T11:05:06Z">
+      <class name="com.qa.hubspot.tests.HomePageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.hubspot.tests.HomePageTest@553f17c]" name="setUp" is-config="true" duration-ms="11883" started-at="2020-09-11T11:04:43Z" finished-at="2020-09-11T11:04:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyHomepageHeaderTest()[pri:1, instance:com.qa.hubspot.tests.HomePageTest@553f17c]" name="verifyHomepageHeaderTest" duration-ms="9523" started-at="2020-09-11T11:04:55Z" finished-at="2020-09-11T11:05:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHomepageHeaderTest -->
+        <test-method status="PASS" signature="verifyHomepageTitleTest()[pri:2, instance:com.qa.hubspot.tests.HomePageTest@553f17c]" name="verifyHomepageTitleTest" duration-ms="65" started-at="2020-09-11T11:05:05Z" finished-at="2020-09-11T11:05:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHomepageTitleTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.hubspot.tests.HomePageTest@553f17c]" name="tearDown" is-config="true" duration-ms="1159" started-at="2020-09-11T11:05:05Z" finished-at="2020-09-11T11:05:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.hubspot.tests.HomePageTest -->
+    </test> <!-- home page test -->
+  </suite> <!-- Hub spot Test automtion regression suite -->
+</testng-results>
