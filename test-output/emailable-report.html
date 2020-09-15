@@ -9,17 +9,48 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="7">Hub spot Test automtion regression suite</th></tr>
-<tr><td><a href="#t0">login page test</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num">15,526</td><td></td><td></td></tr>
-<tr class="stripe"><td><a href="#t1">home page test</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">22,642</td><td></td><td></td></tr>
-<tr><th>Total</th><th class="num">5</th><th class="num">0</th><th class="num">0</th><th class="num">38,168</th><th colspan="2"></th></tr>
+<tr><td><a href="#t0">login page test</a></td><td class="num">2</td><td class="num">0</td><td class="num attn">1</td><td class="num">35,597</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Hub spot Test automtion regression suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">login page test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">com.qa.hubspot.tests.LoginPageTest</td><td><a href="#m0">loginPageTitleTest</a></td><td rowspan="1">1599822281736</td><td rowspan="1">49</td></tr><tr class="passedeven"><td><a href="#m1">loginpageTest</a></td><td rowspan="1">1599822281791</td><td rowspan="1">1209</td></tr><tr class="passedeven"><td><a href="#m2">signuplinkTest</a></td><td rowspan="1">1599822276030</td><td rowspan="1">5700</td></tr></tbody>
-<tbody id="t1"><tr><th colspan="4">home page test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">com.qa.hubspot.tests.HomePageTest</td><td><a href="#m3">verifyHomepageHeaderTest</a></td><td rowspan="1">1599822295862</td><td rowspan="1">9523</td></tr><tr class="passedeven"><td><a href="#m4">verifyHomepageTitleTest</a></td><td rowspan="1">1599822305387</td><td rowspan="1">65</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Hub spot Test automtion regression suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">login page test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.qa.hubspot.tests.LoginPageTest</td><td><a href="#m0">loginPageTitleTest</a></td><td rowspan="1">1600173475390</td><td rowspan="1">10476</td></tr><tr><th colspan="4">login page test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">com.qa.hubspot.tests.LoginPageTest</td><td><a href="#m1">loginpageTest</a></td><td rowspan="1">1600173487541</td><td rowspan="1">1801</td></tr><tr class="passedeven"><td><a href="#m2">signuplinkTest</a></td><td rowspan="1">1600173467945</td><td rowspan="1">7000</td></tr></tbody>
 </table>
-<h2>login page test</h2><h3 id="m0">com.qa.hubspot.tests.LoginPageTest#loginPageTitleTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>login page test</h2><h3 id="m0">com.qa.hubspot.tests.LoginPageTest#loginPageTitleTest</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages"><a href='C:\Users\RAVI\April2020\SeptemberPOMSeries\target\surefire-reports\failure_screenshots\loginPageTitleTest_15_09_2020_06_08_06.png'> <img src='C:\Users\RAVI\April2020\SeptemberPOMSeries\target\surefire-reports\failure_screenshots\loginPageTitleTest_15_09_2020_06_08_06.png' height='100' width='100'/> </a></div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for title to contain &quot;HubSpot Login123&quot;. Current title: &quot;HubSpot Login&quot; (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;RAVI-PC&apos;, ip: &apos;192.168.1.4&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_91&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.102, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Users\RAVI\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:60100}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: f46bc805ef47f8c23d01c51a673f6498
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.qa.hubspot.utilities.ElementUtil.waitForTitleToBePresent(ElementUtil.java:227)
+	at com.qa.hubspot.pages.LoginPage.verifyLoginPageTitle(LoginPage.java:33)
+	at com.qa.hubspot.tests.LoginPageTest.loginPageTitleTest(LoginPageTest.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m1">com.qa.hubspot.tests.LoginPageTest#loginpageTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m2">com.qa.hubspot.tests.LoginPageTest#signuplinkTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>home page test</h2><h3 id="m3">com.qa.hubspot.tests.HomePageTest#verifyHomepageHeaderTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">com.qa.hubspot.tests.HomePageTest#verifyHomepageTitleTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

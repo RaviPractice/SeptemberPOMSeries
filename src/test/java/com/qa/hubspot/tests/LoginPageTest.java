@@ -1,35 +1,23 @@
 package com.qa.hubspot.tests;
 
-import java.util.Properties;
-
-import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
-import com.qa.hubspot.base.BasePage;
-import com.qa.hubspot.pages.LoginPage;
+import com.qa.hubspot.base.BaseTest;
+import com.qa.hubspot.listeners.ExtentReportListener;
+import com.qa.hubspot.listeners.TestAllureListener;
 import com.qa.hubspot.utilities.Constants;
 
-public class LoginPageTest {
+
+//@Listeners(TestAllureListener.class)
+@Listeners(TestAllureListener.class)
+
+public class LoginPageTest extends BaseTest {
 	
-	WebDriver driver;
-	Properties prop;
-	BasePage basepage;
-	LoginPage loginpage;
 	
-	@BeforeTest
-	public void setUp() {
-		basepage = new BasePage();
-		prop = basepage.init_prop();
-		driver = basepage.init_driver(prop);
-		
-		loginpage = new LoginPage(driver);
-		
-		
-	}
-		
+	
+	
 	@Test(priority=2)
 	public void loginPageTitleTest() {
 		String title = loginpage.verifyLoginPageTitle();
@@ -51,12 +39,6 @@ public class LoginPageTest {
 	}
 		
 		
-	@AfterTest
-	public void tearDown() {
-		driver.quit();
-
-			
-		}
 		
 		
 	}
